@@ -1,3 +1,5 @@
+// Question 04 - Fetching API using async/await
+
 async function fetchMoviesJSON() {
 
     // fetching API
@@ -21,19 +23,15 @@ async function fetchMoviesJSON() {
 
     // showing normal error
     if(firstFivePost.length < 5 && firstFivePost.length > 0){
-        const message = ` An error has occured: IndexOutOfBound`
+        const message = `An error has occured: IndexOutOfBound`
         throw new Error(message)
     }else{
         firstFivePost.forEach((Element) => {
             titleArray.push(Element.title);
         })
-
-        
     }
 
     return titleArray;
-
-    
   }
   
   
