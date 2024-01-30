@@ -1,5 +1,5 @@
-// const arr = [-2, 5, 3, -8, 10, -4]
-const arr = [];
+const arr = [-2, 5, 3, -8, 10, -4]
+// const arr = [];
 
 function sumOfPositives(numsArray){
     let sum = 0;
