@@ -14,18 +14,23 @@ while (n > 0) {
 // function to sort array sorting an array
 
 function sortArrayInAscending(array){
-    let sortedArray = array[0]
+    
     for(let i = 0; i < array.length; i++){
-         for(let j = 0; j < array.length; j++){
+         for(let j = 0; j < array.length - i; j++){
             if(array[j] > array[j+1]){
-                let temp = array[i];
-                ar
+                let temp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = temp;
 
             }
          }
     }
+
+    return array;
     
 }
 
-sortArrayInAscending(numArray);
+const result04 =  sortArrayInAscending(numArray);
+
+console.log("Sorted Array is: ",result04)
 
