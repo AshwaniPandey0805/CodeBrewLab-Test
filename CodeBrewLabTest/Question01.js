@@ -14,3 +14,5 @@ function sumOfPositives(numsArray){
 
 const result01 = sumOfPositives(arr);
 console.log(result01);
+
+// need some channges
